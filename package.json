@@ -1,0 +1,13 @@
+{
+  "name": "dojo",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "mocha --compilers coffee:coffee-script/register test/**"
+  },
+  "dependencies": {
+    "coffee-script": "^1.10.0",
+    "bluebird": "^3.0.5",
+    "mocha": "^2.3.4",
+    "chai": "^3.4.1"
+  }
+}
