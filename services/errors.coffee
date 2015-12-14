@@ -8,4 +8,5 @@ class NotImplemented extends Error
 
 module.exports = {
     EntityNotFound: EntityNotFound
+    NotImplemented: NotImplemented
 }

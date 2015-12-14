@@ -3,18 +3,6 @@
 dataAccessService = require '../services/data-access-service'
 restService = require '../services/rest-service'
 
-describe 'data-access-service', ->
-    beforeEach ->
-        initializeDatabase()
-
-    it 'should return \'trash\' as parent if B_1 is requested', ->
-        poData = dataAccessService.get 'B_1'
-        parent = poData.parent
-        expect(parent).to.equal 'trash'
-
-    it 'should throw EntityNotFound if \'trash\' is requested', ->
-        expect(-> dataAccessService.get 'trash').to.throw(EntityNotFound);
-
 describe 'rest-service', ->
     beforeEach ->
         initializeDatabase()
